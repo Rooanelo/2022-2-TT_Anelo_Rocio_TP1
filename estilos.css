@@ -1,0 +1,217 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+	font-family: "HelveticaLTStd";
+	src: url("fonts/HelveticaLTStd-Roman.otf") format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+/*----------------GENERALES------------*/
+* {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+body {
+	font-family: "HelveticaLTStd", "sans-serif";
+	color: #ffffff;
+	background: #d9a7c7;
+}
+h2{
+	text-align: justify;
+	font-size: 4em;
+	font-family: "HelveticaLTStd";
+	font-style: oblique;
+	font-variant: small-caps;
+}
+
+h3{
+	font-family: "HelveticaLTStd";
+	font-size: 1.3em;
+	font-style: italic;
+	font-variant: small-caps;
+}
+/*----------------HEADER-------*/
+.presentacion{
+	border: solid;
+	border-color: #000000;
+	border-width: 3px;
+	display: flex;
+	justify-content:flex-start;
+	font-size: 2em;
+	margin: 68px 150px 21px 55px;
+	padding: 38px 0px 27px 25px;
+}
+.contenido-texto h1 {
+	font-size: 151px;
+	margin-top: 86px;
+}
+.contenido-texto p{
+	font-size: 1em;
+}
+.contenido-texto p, h1{
+	margin-right: 0px;
+	margin-left: 24px;
+}
+
+/*----------------botonera------------*/
+.botonera {
+	height: 43px;
+	font-size: 108%;
+	width: 100%;
+}
+nav ul{
+	list-style: none;
+	margin: 34px 0px 0px 708px;
+	font-size: 2em;
+}
+nav ul li{
+	display: inline;
+	font-size: 100%;
+	margin: 0px 0px 0px 143px;
+}
+.botonera a{
+	text-decoration: none;
+	color: #ffffff;
+	margin: 0px 16px 0px 5px;
+	font-weight: 300;
+	}
+.botonera a_:hover{
+	color:aqua;
+	background-color: aliceblue;
+}
+.botonera a:active{
+	background-color: aqua;
+	color: #000000;
+}
+/*----------------MAIN-------*/
+.habilidades ul {
+	flex-direction: row;
+	display: flex;
+	margin: 1px 0px 0px 34px;
+	
+}
+.habilidades{
+	background: #000000;
+	margin: 10px 0px 0px 26px;
+	padding: 49px 67px 105px 69px;
+}
+.cursos , .estudios{
+	border: 3px solid #000000;
+	margin: 10px 0px 0px 26px;
+	padding: 49px 67px 69px 29px;
+}
+
+.intereses{
+	background: #000000;
+	justify-content: flex-start;
+	flex-direction: row;
+	display: flex;
+	margin: 30px 150px 30px 50px;
+	padding: 49px 63px 69px 59px;
+}
+.intereses ul{
+	display: inline;
+	padding: 0px 0px 0px 96px;
+	font-size: 2em;
+}
+.informaciongeneral{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+	margin: 0px 0px 0px 27px;
+}
+/*---------------FOOTER--------------*/
+
+footer{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	font-size: 1em;
+}
+body footer p {
+	margi: 48px 0px 40px 14px;
+	padding-top: 46px;
+}
+
+/*---------------adaptacion1200px--------------*/
+
+@media screen and (max-width: 1200px){
+	h2{
+	font-size: 3em;
+	}
+	.informaciongeneral{
+	flex-direction: column;
+	display: flex;
+	max-width: 85%;
+	}	
+	
+ .botonera{
+	font-size: 1em;
+	max-width: 100%;
+    }
+    .botonera ul {
+	display: flex;
+	flex-direction: row-reverse;
+	margin-right: 34px;
+    }
+
+    .botonera ul li {
+	width: 70%;
+	margin-left: 37px;
+}
+	.presentacion{
+	background: #000000;
+	border: solid;
+	border-color: #000000;
+	border-width: 3px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 68px 143px 21px 29px;
+	padding: 58px 0px 27px 17px;
+	text-align: center;
+	max-width: 100%;
+}
+.contenido-texto h1 {
+	font-size: 3em;
+}
+.contenido-texto p{
+	font-size: 0.5em;
+}
+.contenido-texto p, h1{
+	margin: 0px 0px 0px 24px;
+}
+	.habilidades ul {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	margin-top: 2px;
+	}
+	.habilidades{
+	background: #000000;
+	padding: 16px 0px 16px 0px;
+	margin: 0px 0px 22px 0px;
+	max-width: 100%;}
+	.estudios, .cursos{
+	margin: 0px 0px 26px 0px;
+		padding: 16px 0px 16px 99px;
+	}
+	.intereses{
+	max-width: 69%;
+	margin-left: 30px;
+	padding-right: 125px;
+	margin-top: 4px;
+	}
+	.intereses ul {
+	display: flex;
+	flex-direction: row;
+	font-size: 1em;
+	}
+	.intereses ul li{
+	margin-right: 25px;
+	}
+}
+footer{
+	max-width: 100%;
+}
